@@ -48,7 +48,7 @@ def fetch_market_data() -> dict:
         'sort': 'market_cap',
         'sort_dir': 'desc'
     }
-    headers = {'X-CMC_PRO_API_KEY': COINMARKETCAP_API}
+    headers = {'X-CMC_PRO_API_KEY': COINMARKETCAP_API_KEY}
     try:
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
