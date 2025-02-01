@@ -17,11 +17,11 @@ from crewai_tools import SerperDevTool
 # Environment Setup & Initialization
 
 load_dotenv()
-COINMARKETCAP_API = os.getenv('COINMARKETCAP_API_KEY')
+COINMARKETCAP_API_KEY= os.getenv('COINMARKETCAP_API_KEY')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 MODEL = os.getenv('MODEL')
 
-if not COINMARKETCAP_API:
+if not COINMARKETCAP_API_KEY:
     raise ValueError("Missing environment variable: COINMARKETCAP_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("Missing environment variable: GEMINI_API_KEY")
