@@ -9,7 +9,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dotenv import load_dotenv
 
-# Import CrewAI components (make sure these packages are installed)
+# Import CrewAI components 
 from crewai import Task, Agent, Crew, LLM
 from crewai_tools import SerperDevTool
 
